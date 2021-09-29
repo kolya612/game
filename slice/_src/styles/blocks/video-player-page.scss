@@ -1,0 +1,47 @@
+.video-page {
+  @include max-screen(767px) {
+
+    .nav-bar {
+      display: none;
+    }
+
+    .header-board {
+      padding: 0;
+      position: relative;
+
+      .return-link {
+        position: absolute;
+        border-radius: 9px;
+        width: 44px;
+        height: 44px;
+        background: black;
+        z-index: 1;
+        opacity: 0.9;
+        color: white;
+        top: 10px;
+
+        span {
+          display: none;
+        }
+
+        &:before {
+          position: absolute;
+          top: 50%;
+          line-height: 1;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      .row.pt-5 {
+        padding-top: 0 !important;
+      }
+    }
+  }
+
+  @include max-screen(575px) {
+    .return-link {
+      left: 25px;
+    }
+  }
+}

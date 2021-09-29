@@ -1,0 +1,417 @@
+.slide-three {
+  .block_plan {
+    width: 100%;
+    min-height: 450px;
+
+    @include max-screen(767px) {
+      min-height: 330px;
+    }
+
+    @include max-screen(575px) {
+      min-height: 350px;
+      max-height: 350px;
+    }
+
+    p {
+      font-family: $sofiaPro;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 13px;
+      line-height: 16px;
+      color: $white;
+      min-height: 62px;
+    }
+
+    .description .phase {
+      display: inline-block;
+      background-color: rgba(221, 76, 86, 0.7);
+      font-family: $sofiaPro;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 21px;
+      padding: 0 7px 2px 7px;
+      border-radius: 7px;
+      color: $white;
+      margin-bottom: 15px;
+      margin-right: 5px;
+
+      &.green {
+        background-color: rgba(0, 170, 119, 1);
+      }
+    }
+
+    .description .check {
+      width: 50px;
+      display: block;
+      height: 50px;
+      border-radius: 50%;
+      background-color: white;
+      text-align: center;
+      line-height: 48px;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      transition: 0.3s;
+
+      &:after {
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        content: "\f067";
+        color: #0011EE;
+        font-size: 18px;
+      }
+
+      &.lock {
+        background-color: #7084CB;
+
+        &:after {
+          font-family: 'Font Awesome 5 Free';
+          font-weight: 900;
+          content: "\f023";
+          font-size: 18px;
+          color: white !important;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+
+  .owl-prev {
+    display: none !important;
+  }
+
+  .owl-next {
+    span {
+      display: none;
+    }
+  }
+}
+
+.work_plan {
+  .block_deskription_plan {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0px 11px 144px 0px #56666D21;
+    max-width: 505px;
+
+    @include max-screen(1199px) {
+      max-width: 350px;
+    }
+
+    &:hover {
+      .block_post_blue {
+        transition: 0.5s;
+        bottom: 0;
+      }
+    }
+  }
+
+  .block_plan {
+    width: 40%;
+    max-height: 100%;
+    margin-bottom: 0;
+  }
+
+  .white_info {
+    background-color: white;
+    padding: 31px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+
+    h3 {
+      font-family: $sofiaPro;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: #11222B;
+      @include max-screen(1199px) {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+
+    .phase {
+      display: inline-block;
+      background-color: rgba(221, 76, 86, 0.7);
+      font-family: $sofiaPro;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 21px;
+      padding: 0 7px 2px 7px;
+      border-radius: 7px;
+      color: $white;
+      margin-bottom: 11px;
+      margin-top: 11px;
+      margin-right: 5px;
+
+      &.green {
+        background-color: rgba(0, 170, 119, 1);
+      }
+    }
+
+    p {
+      font-family: $sofiaPro;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: #11222B;
+      margin-bottom: 12px;
+      height: 170px;
+      overflow: hidden;
+
+      @include max-screen(1199px) {
+        font-size: 11px;
+        line-height: 12px;
+        height: 84px;
+      }
+    }
+
+    .btn.continue {
+      display: inline-block;
+      min-width: 135px;
+      line-height: 60px;
+      border-radius: 38px;
+      border: none;
+      background-color: #0011EE;
+      text-align: center;
+      font-size: 16px;
+      font-family: $sofiaPro;
+      font-weight: 400;
+      color: white;
+      transition: 0.3s;
+      padding: 0;
+
+      &:hover {
+        background-color: $darkBlue;
+
+        path {
+          fill: white;
+        }
+      }
+
+      @include max-screen(991px) {
+        min-width: 127px;
+        font-size: 14px;
+      }
+
+      @include max-screen(575px) {
+        line-height: 50px;
+      }
+    }
+  }
+}
+
+.modal-content {
+  border-radius: 20px;
+  overflow: hidden;
+
+  .modal-header {
+    border: none;
+    padding: 40px;
+    @include max-screen(767px) {
+      padding: 30px 20px 20px 20px;
+    }
+
+    .modal-title {
+      font-family: $sofiaPro;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 24px;
+      line-height: 30px;
+      color: #11222B;
+
+      @include max-screen(575px) {
+        font-size: 21px;
+      }
+    }
+  }
+
+  .modal-body {
+    padding: 0 40px;
+    border: none;
+    @include max-screen(767px) {
+      padding: 0 20px;
+    }
+
+    .help_information {
+      background-color: #FDF5D7;
+      border-radius: 10px;
+      border: 1px solid #FF6B00;
+      padding: 10px;
+      font-family: $sofiaPro;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 21px;
+      color: #970000;
+      margin-bottom: 40px;
+    }
+
+    .block_deskription_plan {
+      background-color: white;
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      box-shadow: 0px 11px 144px 0px #56666D21;
+
+      &:hover {
+        .block_post_blue {
+          transition: 0.5s;
+          bottom: 0;
+        }
+      }
+    }
+
+    .block_plan {
+      width: 40%;
+      max-height: 100%;
+      margin-bottom: 0;
+
+      img {
+        width: 100%;
+        max-height: 100%;
+      }
+    }
+
+    .white_info {
+      background-color: white;
+      padding: 31px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 60%;
+      @include max-screen(767px) {
+        padding: 15px;
+      }
+
+      h3 {
+        font-family: $sofiaPro;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: #11222B;
+        width: 100%;
+        @include max-screen(991px) {
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+
+      .phase {
+        display: inline-block;
+        max-width: max-content;
+        background-color: rgba(221, 76, 86, 0.7);
+        font-family: $sofiaPro;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 21px;
+        padding: 0 7px 2px 7px;
+        border-radius: 7px;
+        color: $white;
+        margin-bottom: 11px;
+        margin-top: 11px;
+        margin-right: 5px;
+
+        &.green {
+          background-color: rgba(0, 170, 119, 1);
+        }
+      }
+
+      p {
+        font-family: $sofiaPro;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #11222B;
+        margin-bottom: 12px;
+        padding-top: 12px;
+        width: 100%;
+        @include max-screen(991px) {
+          font-size: 11px;
+          line-height: 12px;
+        }
+      }
+    }
+
+    .form-control {
+      font-size: 24px;
+      color: black;
+
+      @include max-screen(414px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .modal-footer {
+    border: none;
+    padding: 40px;
+    @include max-screen(767px) {
+      padding: 20px;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      line-height: 60px;
+      border-radius: 38px;
+      border: none;
+      background-color: #0011EE;
+      text-align: center;
+      font-size: 16px;
+      font-family: $sofiaPro;
+      font-weight: 400;
+      color: white;
+      transition: 0.3s;
+      padding: 0;
+      //margin-bottom: 15px;
+      &:hover {
+        color: #0011EE;
+        background-color: white;
+        box-shadow: inset 2px 4px 6px rgba(0, 17, 238, 0.5), 1px 3px 5px rgba(0, 17, 238, 1);
+      }
+
+      @include max-screen(991px) {
+        min-width: 127px;
+        font-size: 14px;
+      }
+
+      @include max-screen(575px) {
+        line-height: 50px;
+      }
+    }
+
+    .btn-secondary {
+      display: inline-block;
+      line-height: 60px;
+      border-radius: 38px;
+      border: none;
+      background-color: transparent;
+      text-align: center;
+      font-size: 16px;
+      font-family: $sofiaPro;
+      font-weight: 400;
+      color: #0011EE;
+      transition: 0.3s;
+      padding: 0;
+      @include max-screen(991px) {
+        min-width: 127px;
+        font-size: 14px;
+      }
+
+      @include max-screen(575px) {
+        line-height: 50px;
+      }
+    }
+  }
+}

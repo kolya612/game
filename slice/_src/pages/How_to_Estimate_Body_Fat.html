@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+@@include('includes/head.html')
+<body>
+@@include('includes/loader.html')
+@@include('includes/nav-bar.html')
+<section class="dashboard pp bg-white estimate-body">
+    <div class="container">
+        <div class="estimate-body__header">
+            <div class="row align-items-center mb-2">
+                <div class="col-6 col-md-8">
+                    <h1 class="title">How to Estimate Body Fat</h1>
+                </div>
+                <div class="col-6 col-md-4 text-right">
+                    <div class="dropdown">
+                        <button class="btn check_in dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-plus"></i> Check-in
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Photo</a>
+                            <a class="dropdown-item" href="#">Weight</a>
+                            <a class="dropdown-item" href="#">Body Fat</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-8 estimate-body__content">
+
+                <p class="text">
+                    Simply weighing yourself every week doesn’t provide enough information to determine your
+                    progression. For example, if you gain muscle and lose fat, your weight may stay the same; but,
+                    your body composition would be improved. It is very important to measure and log your body fat
+                    at least once per month and your weight weekly. Below, you’ll find different ways to calculate
+                    body fat. Some methods are more accurate than others. Whichever method you use, be sure you use
+                    the same method each time for accurate benchmarking.
+                </p>
+
+                <h3 class="title">Estimate Your Body Fat Using the Navy Seal Formula</h3>
+                <p class="text">
+                    This is not as accurate as the methods below but can provide a convenient guess-timate. For this
+                    method, you’ll need a soft tape measure and a scale.
+                    <a class="link" href="#" data-modal="weight_calc">Click Here</a> to estimate your body fat using
+                    the Navy
+                    Seal Formula.
+                </p>
+                <button class="btn btn-primary" data-modal="weight_calc">Estimate Body Fat</button>
+
+                <h3 class="title">Dual-Energy X-Ray Scan</h3>
+                <p class="text">A DEXA Scan will provide the most accurate and precise breakdown of your
+                    distribution of body fat and muscle tissue. You find out overall body fat, lean body mass, bone
+                    weight and percentages of each in each region. It also reveals potentially dangerous fat
+                    surrounding vital organs and allows you to track changes over time. It’s by far the best
+                    mechanism to objectively measure your progress. You can Google locations of DEXA Scans near you
+                    that are very common and usually reasonably priced.</p>
+
+                <h3 class="title">Hydrostatic Method</h3>
+                <p class="text">This method calculates body fat percentage based off of body density. Imagine a
+                    water dunk tank but in a medical setting. After being weighed outside of the water, you sit in a
+                    chair that is lowered into the water. Once submerged, you exhale as much air from your lungs as
+                    possible. Your weight is then calculated. Although it’s considered a highly accurate method to
+                    measure total body fat, it will not provide distribution of fat by body part or region like
+                    DEXA. And, it’s not as convenient as some of the other methods.</p>
+
+                <h3 class="title">Skinfold Caliper Method</h3>
+                <p class="text">Use this plier-shaped instrument to measure thickness of skin. You can order a
+                    skinfold caliper for a few dollars from Amazon. There are different formulas for this method,
+                    but we highly recommend using the 7-Site Skinfold Method for the most accurate reading. You will
+                    measure the thickness of your skin in 7 specific locations on your body and enter those
+                    measurements into the formula below to determine your total body fat percentage. This is a very
+                    accurate way to measure total body fat. It’s also more convenient and affordable than most
+                    alternatives. <a class="link" href="#">Click here</a> to watch this tutorial video about how to
+                    perform a 7-point skinfold
+                    accurately. Then, <a class="link" href="#">click here</a> to enter your results in this formula
+                    that determines your total
+                    body-fat percentage.</p>
+
+                <h3 class="title">BIA (Bio Impedance Analysis) </h3>
+                <p class="text">One of the most popular types of BIA is the InBody brand. It is essentially a scale
+                    that also measures body fat. Although bio impedance is very convenient, as convenient as
+                    weighing yourself, it is definitely the least accurate method because the algorithm used to
+                    determine your body fat doesn’t actually measure your body fat but provides an estimate based
+                    upon many different variables. The problem: those variables also vary, depending on things that
+                    have nothing to do with actual body fat. However, if you use the same device each month at the
+                    same time of day, with the same level of food and water in your system, BIA can be used as a
+                    fair benchmarking tool. To determine if you’re trending in the right direction, we recommend
+                    using the same device at least once a month. Do this first thing in the morning on an empty
+                    stomach to get the most accurate reads. Bio impedance devices like InBody are very common and
+                    can be found through Google search.</p>
+
+<!--                <div class="row mb-5">
+                    <div class="col-6 col-sm-3">
+                        <img class="w-100 d-block" src="../images/Rectangle_1.jpg" alt="" />
+                        <p class="text-center pt-2">0-10%</p>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <img class="w-100 d-block" src="../images/Rectangle_1.jpg" alt="" />
+                        <p class="text-center pt-2">10-20%</p>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <img class="w-100 d-block" src="../images/Rectangle_1.jpg" alt="" />
+                        <p class="text-center pt-2">20-30%</p>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <img class="w-100 d-block" src="../images/Rectangle_1.jpg" alt="" />
+                        <p class="text-center pt-2">40% Or Higher</p>
+                    </div>
+                </div>-->
+
+            </div>
+        </div>
+    </div>
+</section>
+@@include('snippets/popup_weight_calc.html')
+@@include('includes/scripts.html')
+</body>
+</html>

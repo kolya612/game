@@ -1,0 +1,482 @@
+.filters_search {
+  .form-inline {
+    align-content: center;
+    align-items: center;
+
+    //@include max-screen(991px) {
+    //  flex-wrap: nowrap;
+    //}
+  }
+
+  .form-group {
+    display: block;
+    position: relative;
+    height: 60px;
+    border: 4px solid transparent;
+    border-radius: 30px;
+    background-color: $darkWhite;
+    font-family: $sofiaPro;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    max-width: 565px;
+
+    @include max-screen(991px) {
+      max-width: 100%;
+      width: auto;
+    }
+
+    @include max-screen(767px) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @include max-screen(575px) {
+      height: 50px;
+      width: 50%;
+      margin-bottom: 0;
+    }
+
+    .form-control {
+      height: 60px;
+      padding: 0 70px 0 30px;
+      width: 100%;
+      border: none;
+      border-radius: 0;
+      background-color: transparent;
+      position: relative;
+      top: -5px;
+      font-family: $sofiaPro;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 1.5;
+      color: $grey;
+      transition: 0.2s;
+
+      @include max-screen(991px) {
+        max-width: 100%;
+        width: auto;
+      }
+
+    }
+
+    .btn {
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 0 30px;
+      height: 100%;
+
+      i {
+        font-size: 18px;
+        color: #56666D;
+      }
+    }
+  }
+
+  .field-exercisessearchmodel-search {
+    .form-control {
+      border-radius: 30px 0 0 30px;
+      position: relative;
+      left: -3px;
+    }
+  }
+
+  .dropdown-menu {
+    &.show {
+      display: flex;
+      flex-wrap: wrap;
+      width: 300px !important;
+      left: -65px !important;
+      padding: 30px 30px 0 30px !important;
+      margin-top: 5px;
+      @include max-screen(767px) {
+        left: -10px !important;
+        width: 150px !important;
+        padding: 10px !important;
+      }
+    }
+
+    .form-check {
+      width: 50%;
+      text-align: left;
+      justify-content: left;
+      line-height: 30px;
+      height: 30px;
+      margin-bottom: 30px;
+      @include max-screen(767px) {
+        width: 100%;
+      }
+
+      label {
+        font-family: $sofiaPro;
+        font-weight: 400;
+        color: #11222B;
+        font-size: 16px;
+        line-height: 30px;
+        display: flex;
+
+        span {
+          padding-left: 8px;
+        }
+      }
+    }
+  }
+
+  .filter_in {
+    top: 0;
+  }
+}
+
+.filter_in {
+  display: inline-block;
+  min-width: 162px;
+  height: 60px;
+  border-radius: 38px;
+  border: none;
+  background-color: #0011EE;
+  text-align: center;
+  font-size: 16px;
+  font-family: $sofiaPro;
+  font-weight: 400;
+  color: #FFF;
+  transition: 0.3s;
+  padding: 0;
+
+  &:hover {
+    background-color: $darkBlue;
+
+    path {
+      fill: white;
+    }
+  }
+
+  @include max-screen(767px) {
+    min-width: 130px;
+    height: 60px;
+    position: relative;
+    top: -7px;
+  }
+
+  i {
+    margin-right: 15px;
+  }
+
+  &:after {
+    display: none;
+  }
+}
+
+.tags_filters {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px !important;
+  padding-bottom: 50px !important;
+
+  span {
+    display: inline-block;
+    font-family: $sofiaPro;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0011EE;
+    border: 1px solid #F2F6F8;
+    box-shadow: 0px 15px 50px 0px #0011EE1A;
+    padding: 7px 10px;
+    border-radius: 10px;
+    margin-right: 42px;
+
+    &:after {
+      display: inline-block;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      content: "\f00d";
+      color: #56666D;
+      font-size: 11px;
+      margin-left: 7px;
+    }
+
+    @include max-screen(767px) {
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.form-check {
+  .checkbox {
+    --background: #fff;
+    --border: #D1D6EE;
+    --border-hover: #BBC1E1;
+    --border-active: #0011EE;
+    --tick: #fff;
+    position: relative;
+
+    input,
+    svg {
+      width: 30px;
+      height: 30px;
+      display: block;
+    }
+
+    input {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      position: relative;
+      outline: none;
+      background: var(--background);
+      border: none;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: box-shadow .3s;
+      box-shadow: inset 0 0 0 var(--s, 1px) var(--b, var(--border));
+
+      &:hover {
+        --s: 2px;
+        --b: var(--border-hover);
+      }
+
+      &:checked {
+        --b: var(--border-active);
+      }
+    }
+
+    svg {
+      pointer-events: none;
+      fill: none;
+      stroke-width: 2px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke: var(--stroke, var(--border-active));
+      position: absolute;
+      top: 0;
+      left: 0px;
+      width: 30px;
+      height: 30px;
+      transform: scale(var(--scale, 1)) translateZ(0);
+    }
+
+    &.path {
+      input {
+        &:checked {
+          --s: 2px;
+          transition-delay: .4s;
+
+          & + svg {
+            --a: 16.1 86.12;
+            --o: 102.22;
+          }
+        }
+      }
+
+      svg {
+        stroke-dasharray: var(--a, 86.12);
+        stroke-dashoffset: var(--o, 86.12);
+        transition: stroke-dasharray .6s, stroke-dashoffset .6s;
+      }
+    }
+
+    &.bounce {
+      --stroke: var(--tick);
+
+      input {
+        &:checked {
+          --s: 11px;
+
+          & + svg {
+            animation: bounce .4s linear forwards .2s;
+          }
+        }
+      }
+
+      svg {
+        --scale: 0;
+      }
+    }
+  }
+
+  @keyframes bounce {
+    50% {
+      transform: scale(1.2);
+    }
+    75% {
+      transform: scale(.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+.block_video {
+  border-radius: 30px;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  background-color: white;
+  box-shadow: 0px 11px 24px 0px #56666D21;
+  margin-bottom: 50px;
+  transition: 0.3s;
+
+  @include max-screen(575px) {
+    margin-bottom: 0;
+    border-radius: 10px;
+  }
+
+  //&:hover {
+  //  box-shadow: 0 16px 22px 0 #01e;
+  //}
+  .time_video {
+    position: absolute;
+    right: 20px;
+    top: 24px;
+    border-radius: 8px;
+    background-color: #11222B;
+    opacity: 0.8;
+    padding: 2px 6px;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: $sofiaPro;
+    font-weight: 700;
+    color: white;
+    font-style: normal;
+  }
+
+  .play_icon {
+    position: absolute;
+    left: 50%;
+    margin-left: -32px;
+    top: 85px;
+    opacity: 0.7;
+    cursor: pointer;
+    display: inline-block;
+
+    @include max-screen(767px) {
+      top: 25%;
+    }
+  }
+
+  img {
+    width: 100%;
+    display: block;
+  }
+
+}
+
+.description_video {
+  padding: 19px 35px 30px 35px;
+  display: block;
+
+  @include max-screen(575px) {
+    padding: 0 10px 10px 10px;
+  }
+
+  .categories_tag {
+    display: inline-block;
+    background-color: rgba(221, 76, 86, 0.7);
+    font-family: $sofiaPro;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0 7px 2px 7px;
+    border-radius: 7px;
+    color: $white;
+    margin-bottom: 11px;
+    margin-top: 11px;
+    margin-right: 5px;
+    opacity: 0.8;
+
+    &.green {
+      background-color: #00AA77;
+    }
+  }
+
+  .text {
+    display: block;
+    font-family: $sofiaPro;
+    font-weight: 400;
+    color: #11222B;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.header-board {
+  video {
+    border-radius: 30px;
+    overflow: hidden;
+  }
+}
+
+.title_video {
+  font-family: $sofiaPro;
+  font-weight: 400;
+  color: #11222B;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 32px;
+  @include max-screen(991px) {
+    padding-top: 20px;
+  }
+}
+
+.time_big_vid {
+  display: inline-block;
+  border-radius: 8px;
+  background-color: #11222B;
+  opacity: 0.8;
+  padding: 0 6px 2px 6px;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: $sofiaPro;
+  font-weight: 700;
+  color: white;
+  font-style: normal;
+  margin: 21px 0;
+
+  @include max-screen(767px) {
+    margin: 11px 0;
+  }
+
+  @include max-screen(575px) {
+    line-height: 18px;
+  }
+}
+
+.modal-dialog.progress-modal .modal__data-info .form-group {
+  display: flex;
+  align-items: center;
+}
+
+.form-group.position-relative.col-7.col-sm-8.pl-sm-4.field-weightform-date.required.has-success {
+  .form-control.date-picker-input-weight {
+    margin-right: 10px;
+  }
+}
+
+.slide-four {
+  .owl-prev, .owl-next {
+    span {
+      display: none;
+    }
+  }
+}
+
+.all-video__item {
+  .block_video {
+    .play_icon {
+      @include max-screen(767px) {
+        top: 15%;
+        width: 45px;
+
+      }
+    }
+  }
+}

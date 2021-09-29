@@ -1,0 +1,7 @@
+.login.login-1 .login-aside .aside-img {
+  min-height: 65px; }
+
+@media (max-width: 575.98px) {
+  .login.login-1 .aside-img {
+    min-height: 65px !important;
+    background-size: none; } }

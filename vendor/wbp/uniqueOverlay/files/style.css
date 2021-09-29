@@ -1,0 +1,30 @@
+.UniqueLightbox{
+    position: absolute;
+    display: none;
+    width: 100%;
+}
+
+.no-scroll{
+    overflow: hidden;
+}
+
+#ajaxOverlayResult{
+    height: 100%;
+}
+
+#ajaxOverlayResult>form{
+    height: 100%;
+}
+#ajaxOverlayResult .card{
+    height: 100%;
+    overflow: auto;
+}
+.fit-page #ajaxOverlayResult .card{
+    height: 100vh;
+    overflow: auto;
+}
+/*@media screen and (max-width: 640px) {*/
+/*    #ajaxOverlayResult .card{*/
+/*        padding-bottom: 50px;*/
+/*    }*/
+/*}*/

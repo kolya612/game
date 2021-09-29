@@ -1,0 +1,104 @@
+.error {
+  position: relative;
+  min-height: 100vh;
+
+  &.error-404 {
+    background-image: url("../images/bg-error-404.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &.error-405 {
+    background-image: url("../images/bg-error-405.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .header-error {
+    padding: 44px 0;
+
+    &__logo {
+      display: block;
+      margin: 0 auto;
+      width: 106px;
+      height: 50px;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+
+  }
+
+  .error-content__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 505px;
+    max-height: 514px;
+    width: 100%;
+    height: 100%;
+
+    @include max-screen(575px) {
+      max-width: 375px;
+      max-height: 375px;
+    }
+
+    .content-box {
+      width: 100%;
+      height: 100%;
+      border: 10px solid $white;
+      border-radius: 30px;
+      background: $darkGrey;
+      opacity: 66%;
+    }
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 410px;
+      padding: 28px 64px;
+      width: 100%;
+      text-align: center;
+      background: white;
+      border-radius: 30px;
+
+      @include max-screen(575px) {
+        padding: 20px;
+        max-width: 305px;
+      }
+
+      .title, .title-sm {
+        margin-bottom: 40px;
+
+        @include max-screen(575px) {
+          margin-bottom: 20px;
+        }
+      }
+
+      .title {
+        font-family: $sofiaPro;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.25;
+        color: $darkGrey;
+        margin-bottom: 42px;
+
+        &.sub {
+          font-size: 16px;
+          line-height: 1.5;
+        }
+      }
+
+
+    }
+
+  }
+}

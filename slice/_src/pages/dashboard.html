@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+@@include('includes/head.html')
+<body>
+@@include('includes/loader.html')
+@@include('includes/nav-bar.html')
+
+<section class="dashboard pp">
+    <div class="container">
+        <div class="header-board pp">
+            <div class="container">
+                <div class="header-board__top">
+                    <h1 class="title">Welcome Candace!</h1>
+                    <div class="dropdown">
+                        <button class="btn check_in dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-plus"></i> Check-in
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Photo</a>
+                            <a class="dropdown-item" href="#">Weight</a>
+                            <a class="dropdown-item" href="#">Body Fat</a>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Your program started on June 7, 2021</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-12 col-sm-12 col-lg-8">
+                <!-- -->
+                <div class="blocks_widgets mb-4">
+                    <div class="item_block">
+                        <img src="../assets/Group1.svg" alt=""/>
+                        <div class="information">
+                            <h4>Target Weight (lbs)</h4>
+                            <h3>150<span class="badge_green badge_red">.3</span></h3>
+                        </div>
+                    </div>
+                    <div class="item_block">
+                        <a href="" class="addbtn">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                        <img src="assets/Icon1.svg" alt=""/>
+                        <div class="information">
+                            <h4>TCurrent Weight (lbs)</h4>
+                            <h3>135.4<span class="badge_green">.6</span></h3>
+                        </div>
+                    </div>
+                    <div class="item_block">
+                        <a href="" class="addbtn">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                        <img src="assets/Group2.svg" alt=""/>
+                        <div class="information">
+                            <h4>Body Fat %</h4>
+                            <a href="#" class="click">Click to Log</a>
+                        </div>
+                    </div>
+                    <div class="item_block">
+                        <img src="assets/Group3.svg" alt=""/>
+                        <div class="information">
+                            <h4>Total Gains / Losses</h4>
+                            <h3 class="greycolor">0</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="d-flex justify-content-between align-items-center w-188 mb-4">
+                    <h4 class="mb-4">Your Weight Tracker</h4>
+                    <div class="form-group">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>30 days</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <img class="w-100 d-block" src="images/grapf.png" alt=""/>
+            </div>
+            <div class="col-12 col-md-12 col-sm-12 col-lg-4">
+                <div class="bg_lightgrey">
+                    <h4>Make your first photo checkin</h4>
+                    <p>
+                        How to check in consectetur adipiscing elit. Senectus ullamcorper risus hendrerit risus nunc
+                        porttitor facilisis amet.
+                    </p>
+
+                    <div class="owl-carousel slide-two pt-3">
+                        <img src="images/393090536.png" alt=""/>
+                        <img src="images/393090536.png" alt=""/>
+                        <img src="images/393090536.png" alt=""/>
+                        <img src="images/393090536.png" alt=""/>
+                    </div>
+                    <a href="#" class="btn check_in_2">Continue </a>
+                </div>
+                <h4 class="mb-4">You might also like...</h4>
+                <div class="d-flex justify-content-between">
+                    <!-- -->
+                    <div class="block_plan">
+                        <div class="description">
+                            <span class="check">
+                                <img src="assets/Group.svg" alt=""/>
+                            </span>
+                            <div class="bottom_d">
+                                <h3>
+                                    Bikini Body Meal Plan
+                                </h3>
+                                <span class="phase">Phase 1</span>
+                            </div>
+                        </div>
+                        <div class="block_post_blue"></div>
+                        <img src="images/1124.png" alt=""/>
+                    </div>
+                    <!-- -->
+                    <!-- -->
+                    <div class="block_plan">
+                        <div class="description">
+                            <span class="check">
+                                <img src="assets/Icon.svg" alt=""/>
+                            </span>
+                            <div class="bottom_d">
+                                <h3>
+                                    Bikini Body Meal Plan
+                                </h3>
+                                <span class="phase">Phase 1</span>
+                            </div>
+                        </div>
+                        <div class="block_post_blue"></div>
+                        <img src="images/8ad.png" alt=""/>
+                    </div>
+                    <!-- -->
+                </div>
+                <div class="you_product mb-2">
+                    <h3 class="title">
+                        <img src="assets/XMLID.svg" alt=""/>
+                        Your Products
+                    </h3>
+                    <a href="#">View All</a>
+                </div>
+                <div class="block_product_dash">
+                    <img src="images/divatrim.png" alt=""/>
+                    <div>
+                        <span class="categories">Natural Energy</span>
+                        <p>
+                            Designed to supply you with vital nutrients and a spectrum of natural energy enhancers to
+                            jumpstart your day.
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <div class="tile__price-value">$39.65</div>
+                            <div class="tile__price-old">$69.95</div>
+                            <div class="tile__price-safety">30% OFF</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@@include('includes/scripts.html')
+</body>
+</html>

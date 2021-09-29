@@ -1,0 +1,34 @@
+.estimate-body {
+  margin-bottom: 68px;
+
+  &__content {
+    .title {
+      font-family: $sofiaPro;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.25;
+      color: $darkGrey;
+      margin-bottom: 10px;
+      padding-top: 28px;
+    }
+
+    .text {
+      font-family: $sofiaPro;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: $darkGrey;
+      margin-bottom: 10px;
+
+      .link {
+        color: $blue;
+        text-decoration: underline;
+      }
+    }
+
+    .btn {
+      margin-bottom: 10px;
+    }
+  }
+}
+

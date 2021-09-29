@@ -1,0 +1,44 @@
+h3.sub_title {
+  font-family: $sofiaPro;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 30px;
+  color: $grey;
+}
+
+#modal_weight_calc {
+  .modal-header {
+    align-items: end;
+
+    &__title {
+      padding-right: 35px;
+    }
+
+
+    .close {
+      position: relative;
+      top: 13px;
+    }
+  }
+
+  .modal-dialog.progress-modal .modal-header__title .title {
+    margin-left: 0px;
+  }
+
+  .form-label__text {
+    padding-left: 5px;
+    margin-bottom: 10px;
+    font-family: "Sofia Pro", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #56666d;
+  }
+
+  .form-group__text {
+    font-size: 19px;
+    min-width: 24px;
+  }
+}

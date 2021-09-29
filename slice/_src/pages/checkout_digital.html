@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+@@include('includes/head.html')
+<body class="checkout-bg">
+@@include('includes/loader.html')
+@@include('includes/checkout-header.html')
+
+<!--***********************************( 1 digital )******************************************-->
+
+<section class="checkout">
+    <div class="container">
+        <h1 class="checkout__title">Secure Checkout</h1>
+
+        <div class="row d-flex flex-column-reverse flex-lg-row">
+            <div class="col-12 col-lg-6 del-sm-pd">
+                <div class="checkout-info__top">
+
+                    <div class="checkout-section payment">
+                        <div class="checkout-info__title">
+                            <h3 class="title-sm">Payment</h3>
+                            <hr>
+                        </div>
+                        <div class="form-group">
+                            <label class="label-hidden" for="inputState">Select Payment Method</label>
+                            <select id="inputState" class="form-control">
+                                <option>Visa ending in 1234 (default)</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="label-hidden" for="cvv">CVV</label>
+                                    <input type="text" class="form-control" id="cvv" placeholder="CVV">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="label-hidden" for="expiration-date">Expiration Date</label>
+                                    <input type="text" maxlength="5" class="form-control" id="expiration-date"
+                                           placeholder="Expiration Date">
+                                </div>
+                            </div>
+                        </div>
+                        <a class="link-primary font-weight-bold" href="#">
+                            <img class="icon-plus-bold" src="../assets/plus-blue.svg" alt="blue-plus">
+                            Add a different payment method
+                        </a>
+                    </div>
+
+                    <div class="terms-conditions">
+                        <div class="checkout-info__title">
+                            <h3 class="title-sm">Terms & Conditions</h3>
+                            <hr>
+                        </div>
+
+                        <div class="form-group-wrapper">
+
+                            <div class="form-check">
+                                <label for="defaultCheck1" class="checkbox path">
+                                    <input id="defaultCheck1" type="checkbox" checked>
+                                    <svg viewBox="0 0 21 21">
+                                        <path d="M5,10.75 L8.5,14.25 L19.4,2.3 C18.8333333,1.43333333 18.0333333,1 17,1 L4,1 C2.35,1 1,2.35 1,4 L1,17 C1,18.65 2.35,20 4,20 L17,20 C18.65,20 20,18.65 20,17 L20,7.99769186"></path>
+                                    </svg>
+                                    <span class="input-text">I agree to the <a class="link" href="#">terms and conditions.</a></span>
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <label for="defaultCheck2" class="checkbox path">
+                                    <input id="defaultCheck2" type="checkbox">
+                                    <svg viewBox="0 0 21 21">
+                                        <path d="M5,10.75 L8.5,14.25 L19.4,2.3 C18.8333333,1.43333333 18.0333333,1 17,1 L4,1 C2.35,1 1,2.35 1,4 L1,17 C1,18.65 2.35,20 4,20 L17,20 C18.65,20 20,18.65 20,17 L20,7.99769186"></path>
+                                    </svg>
+                                    <span class="input-text">Send me marketing emails so I can save on future orders.</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button class="order-btn btn btn-primary mx-auto">
+                            <svg class="icon" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.1569 17.8633C16.877 17.8633 15.8216 18.8962 15.8216 20.1986C15.8216 21.4785 16.8545 22.5339 18.1569 22.5339C19.4368 22.5339 20.4922 21.5009 20.4922 20.1986C20.4697 18.9187 19.4368 17.8633 18.1569 17.8633Z"
+                                      fill="white"/>
+                                <path d="M22.2661 6.72468C22.2212 6.72468 22.1539 6.70223 22.0865 6.70223H7.94004L7.71549 5.19776C7.58076 4.20976 6.72748 3.46875 5.71702 3.46875H3.89819C3.40418 3.46875 3 3.87293 3 4.36694C3 4.86094 3.40418 5.26513 3.89819 5.26513H5.71702C5.82929 5.26513 5.91911 5.35495 5.94157 5.46722L7.33376 14.9431C7.5134 16.1332 8.54631 17.0314 9.75887 17.0314H19.1C20.2677 17.0314 21.2781 16.2006 21.5251 15.0554L22.9847 7.7576C23.0745 7.28605 22.7601 6.8145 22.2661 6.72468Z"
+                                      fill="white"/>
+                                <path d="M12.431 20.0863C12.3861 18.8513 11.3532 17.8633 10.1182 17.8633C8.81579 17.9306 7.82778 19.0085 7.87269 20.2884C7.9176 21.5234 8.92806 22.5114 10.1631 22.5114H10.208C11.4879 22.444 12.4984 21.3662 12.431 20.0863Z"
+                                      fill="white"/>
+                            </svg>
+                            COMPLETE ORDER
+                        </button>
+
+                        <p class="text">Your payment information is stored securely.</p>
+                    </div>
+                </div>
+                <div class="checkout-info__bottom">
+                    <p class="text">Need help? Call us at <a class="link"
+                                                             href="tel:(844) 423-5386">(844)&nbsp;423-5386</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6 del-sm-pd">
+                <div class="checkout-order">
+                    <h3 class="title-sm">Order Summary</h3>
+                    <div class="checkout-order__product content-box">
+                        <div class="img-box digital-product">
+                            <img src="../images/8ad.png" alt="product">
+                        </div>
+
+                        <div class="product-info">
+                            <div class="title-group">
+                                <p class="title">Bikini Body Lean & Tone Home Edition</p>
+                                <img class="order-product-close" src="../assets/exit.svg" alt="close">
+                            </div>
+                            <span class="categories_tag">Phase 1</span>
+                        </div>
+                    </div>
+                    <div class="checkout-order__price content-box">
+                        <ul>
+                            <li class="price__elem">
+                                <span class="text grey">Regular Price</span>
+                                <span class="text price grey">$19.95</span>
+                            </li>
+                            <li class="price__elem">
+                                <span class="text green discount">Discounted Price</span>
+                                <span class="text price green">$14.99</span>
+                            </li>
+                            <li class="price__elem">
+                                <span class="text">Shipping & Handling</span>
+                                <span class="text price">$0.00</span>
+                            </li>
+                            <li class="price__elem">
+                                <span class="text">Tax</span>
+                                <span class="text price">$0.00</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="total-price">
+                        <span>TOTAL</span>
+                        <span>$149.91</span>
+                    </div>
+                </div>
+
+                <div class="coupon-wrapper">
+                    <form action="">
+                        <div class="d-flex">
+                            <div class="form-group w-100">
+                                <label class="label-hidden" for="exampleInputPassword1">Coupon</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1"
+                                       placeholder="HAVE A COUPON?">
+                            </div>
+
+                            <button class="btn primary-light coupon-btn" type="submit">
+                                APPLY
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--***********************************( 2 digital )******************************************-->
+
+
+<section class="checkout">
+    <div class="container">
+        <h1 class="checkout__title">Secure Checkout</h1>
+
+        <div class="row d-flex flex-column-reverse flex-lg-row">
+            <div class="col-12 col-lg-6 del-sm-pd">
+                <div class="checkout-info__top">
+                    <div class="checkout-section payment">
+                        <div class="checkout-info__title">
+                            <h3 class="title-sm">Payment</h3>
+                            <hr>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="label-hidden" for="Candace">Candace</label>
+                                    <input type="text" class="form-control" id="Candace" placeholder="Candace">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="label-hidden" for="Owens">Owens</label>
+                                    <input type="text" maxlength="5" class="form-control" id="Owens"
+                                           placeholder="Owens">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="label-hidden" for="Credit Card Number">Credit Card Number</label>
+                            <input type="number" class="form-control" id="Credit Card Number"
+                                   placeholder="Credit Card Number">
+                        </div>
+                        <div class="form-row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="label-hidden" for="cvv">CVV</label>
+                                    <input type="text" class="form-control" id="cvv" placeholder="CVV">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="label-hidden" for="expiration-date">Expiration Date</label>
+                                    <input type="text" maxlength="5" class="form-control" id="expiration-date"
+                                           placeholder="Expiration Date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <label for="defaultCheck3" class="checkbox path">
+                                <input id="defaultCheck3" type="checkbox" checked>
+                                <svg viewBox="0 0 21 21">
+                                    <path d="M5,10.75 L8.5,14.25 L19.4,2.3 C18.8333333,1.43333333 18.0333333,1 17,1 L4,1 C2.35,1 1,2.35 1,4 L1,17 C1,18.65 2.35,20 4,20 L17,20 C18.65,20 20,18.65 20,17 L20,7.99769186"></path>
+                                </svg>
+                                <span class="input-text">Billing and shipping address are the same</span>
+                            </label>
+                        </div>
+
+                        <a class="link-primary font-weight-bold" href="#">
+                            <img class="icon-plus-bold" src="../assets/plus-blue.svg" alt="blue-plus">
+                            Choose an existing payment method
+                        </a>
+                    </div>
+
+                    <div class="terms-conditions">
+                        <div class="checkout-info__title">
+                            <h3 class="title-sm">Terms & Conditions</h3>
+                            <hr>
+                        </div>
+
+                        <div class="form-group-wrapper">
+                            <div class="form-check">
+                                <label for="defaultCheck1" class="checkbox path">
+                                    <input id="defaultCheck1" type="checkbox" checked>
+                                    <svg viewBox="0 0 21 21">
+                                        <path d="M5,10.75 L8.5,14.25 L19.4,2.3 C18.8333333,1.43333333 18.0333333,1 17,1 L4,1 C2.35,1 1,2.35 1,4 L1,17 C1,18.65 2.35,20 4,20 L17,20 C18.65,20 20,18.65 20,17 L20,7.99769186"></path>
+                                    </svg>
+                                    <span class="input-text">I agree to the <a class="link" href="#">terms and conditions.</a></span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label for="defaultCheck2" class="checkbox path">
+                                    <input id="defaultCheck2" type="checkbox">
+                                    <svg viewBox="0 0 21 21">
+                                        <path d="M5,10.75 L8.5,14.25 L19.4,2.3 C18.8333333,1.43333333 18.0333333,1 17,1 L4,1 C2.35,1 1,2.35 1,4 L1,17 C1,18.65 2.35,20 4,20 L17,20 C18.65,20 20,18.65 20,17 L20,7.99769186"></path>
+                                    </svg>
+                                    <span class="input-text">Send me marketing emails so I can save on future orders.</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button class="order-btn btn btn-primary mx-auto">
+                            <svg class="icon" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.1569 17.8633C16.877 17.8633 15.8216 18.8962 15.8216 20.1986C15.8216 21.4785 16.8545 22.5339 18.1569 22.5339C19.4368 22.5339 20.4922 21.5009 20.4922 20.1986C20.4697 18.9187 19.4368 17.8633 18.1569 17.8633Z"
+                                      fill="white"/>
+                                <path d="M22.2661 6.72468C22.2212 6.72468 22.1539 6.70223 22.0865 6.70223H7.94004L7.71549 5.19776C7.58076 4.20976 6.72748 3.46875 5.71702 3.46875H3.89819C3.40418 3.46875 3 3.87293 3 4.36694C3 4.86094 3.40418 5.26513 3.89819 5.26513H5.71702C5.82929 5.26513 5.91911 5.35495 5.94157 5.46722L7.33376 14.9431C7.5134 16.1332 8.54631 17.0314 9.75887 17.0314H19.1C20.2677 17.0314 21.2781 16.2006 21.5251 15.0554L22.9847 7.7576C23.0745 7.28605 22.7601 6.8145 22.2661 6.72468Z"
+                                      fill="white"/>
+                                <path d="M12.431 20.0863C12.3861 18.8513 11.3532 17.8633 10.1182 17.8633C8.81579 17.9306 7.82778 19.0085 7.87269 20.2884C7.9176 21.5234 8.92806 22.5114 10.1631 22.5114H10.208C11.4879 22.444 12.4984 21.3662 12.431 20.0863Z"
+                                      fill="white"/>
+                            </svg>
+                            COMPLETE ORDER
+                        </button>
+
+                        <p class="text">Your payment information is stored securely.</p>
+                    </div>
+                </div>
+                <div class="checkout-info__bottom">
+                    <p class="text">Need help? Call us at <a class="link"
+                                                             href="tel:(844) 423-5386">(844)&nbsp;423-5386</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6 del-sm-pd">
+                <div class="checkout-order">
+                    <h3 class="title-sm">Order Summary</h3>
+                    <div class="checkout-order__product content-box">
+                        <div class="img-box digital-product">
+                            <img src="../images/8ad.png" alt="product">
+                        </div>
+
+                        <div class="product-info">
+                            <div class="title-group">
+                                <p class="title">Bikini Body Lean & Tone Home Edition</p>
+                                <img class="order-product-close" src="../assets/exit.svg" alt="close">
+                            </div>
+                            <span class="categories_tag">Phase 1</span>
+                        </div>
+                    </div>
+                    <div class="checkout-order__price content-box">
+                        <ul>
+                            <li class="price__elem">
+                                <span class="text grey">Regular Price</span>
+                                <span class="text price grey">$19.95</span>
+                            </li>
+                            <li class="price__elem">
+                                <span class="text green discount">Discounted Price</span>
+                                <span class="text price green">$14.99</span>
+                            </li>
+                            <li class="price__elem">
+                                <span class="text">Shipping & Handling</span>
+                                <span class="text price">$0.00</span>
+                            </li>
+                            <li class="price__elem">
+                                <span class="text">Tax</span>
+                                <span class="text price">$0.00</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="total-price">
+                        <span>TOTAL</span>
+                        <span>$149.91</span>
+                    </div>
+                </div>
+
+                <div class="coupon-wrapper">
+                    <form action="">
+                        <div class="d-flex">
+                            <div class="form-group w-100">
+                                <label class="label-hidden" for="exampleInputPassword1">Coupon</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1"
+                                       placeholder="HAVE A COUPON?">
+                            </div>
+
+                            <button class="btn primary-light coupon-btn" type="submit">
+                                APPLY
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--***********************************( 3 digital )******************************************-->
+
+<section class="checkout">
+    <div class="container">
+        <h1 class="checkout__title">Secure Checkout</h1>
+        <div class="row d-flex flex-column-reverse flex-lg-row">
+            <div class="col-12 col-lg-6 del-sm-pd">
+                <div class="checkout-info__top">
+
+                    <div class="checkout-section payment">
+                        <div class="checkout-info__title">
+                            <h3 class="title-sm">Payment</h3>
+                            <hr>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="label-hidden" for="First Name">First Name</label>
+                                    <input type="text" class="form-control" id="First Name" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="label-hidden" for="Last Name">Last Name</label>
+                                    <input type="text" maxlength="5" class="form-control" id="Last Name"
+                                           placeholder="Last Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="label-hidden" for="Credit Card Number">Credit Card Number</label>
+                            <input type="number" class="form-control" id="Credit Card Number"
+                                   placeholder="Credit Card Number">
+                        </div>
+                        <div class="form-row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="label-hidden" for="cvv">CVV</label>
+                                    <input type="text" class="form-control" id="cvv" placeholder="CVV">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="label-hidden" for="expiration-date">Expiration Date</label>
+                                    <input type="text" maxlength="5" class="form-control" id="expiration-date"
+                                           placeholder="Expiration Date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <label for="defaultCheck3" class="checkbox path">
+                                <input id="defaultCheck3" type="checkbox">
+                                <svg viewBox="0 0 21 21">
+                                    <path d="M5,10.75 L8.5,14.25 L19.4,2.3 C18.8333333,1.43333333 18.0333333,1 17,1 L4,1 C2.35,1 1,2.35 1,4 L1,17 C1,18.65 2.35,20 4,20 L17,20 C18.65,20 20,18.65 20,17 L20,7.99769186"></path>
+                                </svg>
+                                <span class="input-text">Billing and shipping address are the same</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="checkout-section billing-address">
+                        <h3 class="title-sm">Billing Address</h3>
+                        <div class="form-group">
+                            <label class="label-hidden" for="country">COUNTRY</label>
+                            <select id="country" class="form-control">
+                                <option>United States</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="label-hidden" for="Street Address">Street Address</label>
+                            <input type="text" class="form-control mb-1" id="Street Address"
+                                   placeholder="Street Address">
+                            <a class="link-primary font-weight-bold" href="#">
+                                <img class="icon-plus-bold" src="../assets/plus-blue.svg" alt="blue-plus">
+                                Add Line 2
+                            </a>
+                        </div>
+                        <div class="form-group">
+                            <label class="label-hidden" for="City">City</label>
+                            <input type="text" class="form-control mb-1" id="City" placeholder="City">
+                        </div>
+                        <div class="form-row">
+                            <div class="col-8">
+                                <div class="form-group">
+                                    <label class="label-hidden" for="State">State</label>
+                                    <select id="State" class="form-control">
+                                        <option>State</option>
+                                        <option>...</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-group">
+                                    <label class="label-hidden" for="ZIP">ZIP</label>
+                                    <input type="text" maxlength="5" class="form-control" id="ZIP"
+                                           placeholder="ZIP">
+                                </div>
+                            </div>
+                        </div>
+                        <a class="link-primary font-weight-bold" href="#">
+                            <img class="icon-plus-bold" src="../assets/plus-blue.svg" alt="blue-plus">
+                            Choose an existing payment method
+                        </a>
+
+                    </div>
+
+                    <div class="terms-conditions">
+                        <div class="checkout-info__title">
+                            <h3 class="title-sm">Terms & Conditions</h3>
+                            <hr>
+                        </div>
+
+                        <div class="form-group-wrapper">
+
+                            <div class="form-check">
+                                <label for="defaultCheck1" class="checkbox path">
+                                    <input id="defaultCheck1" type="checkbox" checked>
+                                    <svg viewBox="0 0 21 21">
+                                        <path d="M5,10.75 L8.5,14.25 L19.4,2.3 C18.8333333,1.43333333 18.0333333,1 17,1 L4,1 C2.35,1 1,2.35 1,4 L1,17 C1,18.65 2.35,20 4,20 L17,20 C18.65,20 20,18.65 20,17 L20,7.99769186"></path>
+                                    </svg>
+                                    <span class="input-text">I agree to the <a class="link" href="#">terms and conditions.</a></span>
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <label for="defaultCheck2" class="checkbox path">
+                                    <input id="defaultCheck2" type="checkbox">
+                                    <svg viewBox="0 0 21 21">
+                                        <path d="M5,10.75 L8.5,14.25 L19.4,2.3 C18.8333333,1.43333333 18.0333333,1 17,1 L4,1 C2.35,1 1,2.35 1,4 L1,17 C1,18.65 2.35,20 4,20 L17,20 C18.65,20 20,18.65 20,17 L20,7.99769186"></path>
+                                    </svg>
+                                    <span class="input-text">Send me marketing emails so I can save on future orders.</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button class="order-btn btn btn-primary mx-auto">
+                            <svg class="icon" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.1569 17.8633C16.877 17.8633 15.8216 18.8962 15.8216 20.1986C15.8216 21.4785 16.8545 22.5339 18.1569 22.5339C19.4368 22.5339 20.4922 21.5009 20.4922 20.1986C20.4697 18.9187 19.4368 17.8633 18.1569 17.8633Z"
+                                      fill="white"/>
+                                <path d="M22.2661 6.72468C22.2212 6.72468 22.1539 6.70223 22.0865 6.70223H7.94004L7.71549 5.19776C7.58076 4.20976 6.72748 3.46875 5.71702 3.46875H3.89819C3.40418 3.46875 3 3.87293 3 4.36694C3 4.86094 3.40418 5.26513 3.89819 5.26513H5.71702C5.82929 5.26513 5.91911 5.35495 5.94157 5.46722L7.33376 14.9431C7.5134 16.1332 8.54631 17.0314 9.75887 17.0314H19.1C20.2677 17.0314 21.2781 16.2006 21.5251 15.0554L22.9847 7.7576C23.0745 7.28605 22.7601 6.8145 22.2661 6.72468Z"
+                                      fill="white"/>
+                                <path d="M12.431 20.0863C12.3861 18.8513 11.3532 17.8633 10.1182 17.8633C8.81579 17.9306 7.82778 19.0085 7.87269 20.2884C7.9176 21.5234 8.92806 22.5114 10.1631 22.5114H10.208C11.4879 22.444 12.4984 21.3662 12.431 20.0863Z"
+                                      fill="white"/>
+                            </svg>
+                            COMPLETE ORDER
+                        </button>
+
+                        <p class="text">Your payment information is stored securely.</p>
+                    </div>
+                </div>
+
+                <div class="checkout-info__bottom">
+                    <p class="text">Need help? Call us at <a class="link"
+                                                             href="tel:(844) 423-5386">(844)&nbsp;423-5386</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6 del-sm-pd">
+                <div class="checkout-order">
+                    <h3 class="title-sm">Order Summary</h3>
+                    <div class="checkout-order__product content-box">
+                        <div class="img-box digital-product">
+                            <img src="../images/8ad.png" alt="product">
+                        </div>
+
+                        <div class="product-info">
+                            <div class="title-group">
+                                <p class="title">Bikini Body Lean & Tone Home Edition</p>
+                                <img class="order-product-close" src="../assets/exit.svg" alt="close">
+                            </div>
+                            <span class="categories_tag">Phase 1</span>
+                        </div>
+                    </div>
+                    <div class="checkout-order__price content-box">
+                        <ul>
+                            <li class="price__elem">
+                                <span class="text grey">Regular Price</span>
+                                <span class="text price grey">$19.95</span>
+                            </li>
+                            <li class="price__elem">
+                                <span class="text green discount">Discounted Price</span>
+                                <span class="text price green">$14.99</span>
+                            </li>
+                            <li class="price__elem">
+                                <span class="text">Shipping & Handling</span>
+                                <span class="text price">$0.00</span>
+                            </li>
+                            <li class="price__elem">
+                                <span class="text">Tax</span>
+                                <span class="text price">$0.00</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="total-price">
+                        <span>TOTAL</span>
+                        <span>$149.91</span>
+                    </div>
+                </div>
+
+                <div class="coupon-wrapper">
+                    <form action="">
+                        <div class="d-flex">
+                            <div class="form-group w-100">
+                                <label class="label-hidden" for="exampleInputPassword1">Coupon</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1"
+                                       placeholder="HAVE A COUPON?">
+                            </div>
+
+                            <button class="btn primary-light coupon-btn" type="submit">
+                                APPLY
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@@include('includes/scripts.html')
+</body>
+</html>

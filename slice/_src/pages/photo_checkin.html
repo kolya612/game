@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+@@include('includes/head.html')
+<body>
+@@include('includes/loader.html')
+@@include('includes/nav-bar.html')
+<section class="photo-checkin">
+    <div class="container">
+        <div class="row flex-column-reverse flex-lg-row">
+            <div class="col-12 col-lg-8 border-st">
+                <form action="">
+                    <div class="loading-photo pp">
+
+                        <div class="alert-block">
+                            <div class="alert alert-danger medium-pd medium-br" role="alert">
+                                You already have a weight checkin for this date.
+                            </div>
+                        </div>
+
+                        <h2 class="title data-title">When did you take these photos?</h2>
+
+                        <div class="edit-data-wrapper">
+                            <div class="form-group">
+                                <label class="label-hidden" for="data-info">Date</label>
+                                <input class="form-control" type="text" id="data-info" data-name="data">
+                                <svg class="icon-data" width="30" height="30" viewBox="0 0 31 30" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                        <path d="M24.6119 6.25H23.3663V3.75C23.3663 3.41848 23.2351 3.10054 23.0015 2.86612C22.7679 2.6317 22.4511 2.5 22.1208 2.5C21.7904 2.5 21.4736 2.6317 21.24 2.86612C21.0065 3.10054 20.8752 3.41848 20.8752 3.75V6.25H10.9108V3.75C10.9108 3.41848 10.7796 3.10054 10.546 2.86612C10.3124 2.6317 9.9956 2.5 9.66526 2.5C9.33492 2.5 9.01811 2.6317 8.78452 2.86612C8.55093 3.10054 8.41971 3.41848 8.41971 3.75V6.25H7.17416C6.18313 6.25 5.2327 6.64509 4.53194 7.34835C3.83118 8.05161 3.4375 9.00544 3.4375 10V11.25H28.3485V10C28.3485 9.00544 27.9549 8.05161 27.2541 7.34835C26.5533 6.64509 25.6029 6.25 24.6119 6.25Z"
+                                              fill="#56666D"></path>
+                                        <path d="M3.4375 23.75C3.4375 24.7446 3.83118 25.6984 4.53194 26.4016C5.2327 27.1049 6.18313 27.5 7.17416 27.5H24.6119C25.6029 27.5 26.5533 27.1049 27.2541 26.4016C27.9549 25.6984 28.3485 24.7446 28.3485 23.75V13.75H3.4375V23.75Z"
+                                              fill="#56666D"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0">
+                                            <rect width="29.8932" height="30" fill="white"
+                                                  transform="translate(0.946289)"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="edit-photo-group">
+                            <h2 class="title">Upload Photos</h2>
+
+                            <div class="row">
+
+                                <div class="col-4">
+                                    <div class="edit-photo">
+                                        <div class="image-input image-input-outline" id="kt_image_1">
+                                            <input type="hidden" name="image[]" value="ImageUploader">
+                                            <div id="ImageUploader-container" class="uploadifive-container">
+                                                <input type="file" id="ImageUploader" name="ImageUploader">
+                                                <div id="ImageUploader-files" class="uploadifive-files">
+                                                    <div class="image"
+                                                         style="background-image: url('../images/1peges.png')"
+                                                         data-key="7">
+                                                        <!--                                                    <img src="../images/1peges.png" alt="user-photo">-->
+                                                        <div class="info">img-3.jpg<br>Size: 600x400</div>
+                                                        <a href="" class="removeImage" id="ImageRemoveButton"
+                                                           data-toggle="tooltip" data-placement="left"
+                                                           title="Remove"></a>
+                                                        <a class="ajax editImage" href="/admin/crop"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-4">
+                                    <div class="edit-photo">
+                                        <div class="delete-photo-btn"></div>
+                                        <div class="image-input image-input-outline" id="kt_image_1">
+                                            <input type="hidden" name="image[]" value="ImageUploader">
+                                            <div id="ImageUploader-container" class="uploadifive-container">
+                                                <input type="file" id="ImageUploader1" name="ImageUploader">
+                                                <div id="ImageUploader-files" class="uploadifive-files">
+                                                    <!--                                    <div class="image" style="width:123px;height:123px" data-key="7">
+                                                                                            <img src="/images/cache/7/1_123x123.jpg" alt="">
+                                                                                            <div class="info">img-3.jpg<br>Size: 600x400</div>
+                                                                                            <a href="" class="removeImage" id="ImageRemoveButton"></a>
+                                                                                            <a class="ajax editImage" href="/admin/crop"></a>
+                                                                                        </div>-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-4">
+                                    <div class="edit-photo">
+                                        <div class="delete-photo-btn"></div>
+                                        <div class="image-input image-input-outline" id="kt_image_1">
+                                            <input type="hidden" name="image[]" value="ImageUploader">
+                                            <div id="ImageUploader-container" class="uploadifive-container">
+                                                <input type="file" id="ImageUploader2" name="ImageUploader">
+                                                <div id="ImageUploader-files" class="uploadifive-files">
+                                                    <!--                                    <div class="image" style="width:123px;height:123px" data-key="7">
+                                                                                            <img src="/images/cache/7/1_123x123.jpg" alt="">
+                                                                                            <div class="info">img-3.jpg<br>Size: 600x400</div>
+                                                                                            <a href="" class="removeImage" id="ImageRemoveButton"></a>
+                                                                                            <a class="ajax editImage" href="/admin/crop"></a>
+                                                                                        </div>-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <button class="btn btn-blue-style disabled" type="submit">Upload Photos</button>
+
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-12 col-lg-4">
+                <div class="about-photo-checkin pp">
+                    <h1 class="title">Photo Checkin</h1>
+                    <p class="text mb">Use your timer and a phone stand to help you get the most consistent
+                        shots.</p>
+                    <p class="text mb">Follow these suggestions for best results:</p>
+
+                    <ol>
+                        <li class="text">Take vertical, full-body photos.</li>
+                        <li class="text">Take photos right when you wake up.</li>
+                        <li class="text">Take photos before eating or drinking.</li>
+                        <li class="text"> Use the same lighting for all photos.</li>
+                        <li class="text"> Use same location and placement.</li>
+                    </ol>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@@include('includes/scripts.html')
+<script src="../assets/jquery.uploadifive.min.js"></script>
+<script>
+    $('#ImageUploader').uploadifive({
+        "width": "auto",
+        "height": "auto",
+        "buttonText": "",
+        "buttonText1": "Front",
+        "buttonText2": "Drag and drop your<br>photos or click to upload",
+        "formData": {
+            "type": "progress_front",
+            "uniqueId": "ImageUploader",
+            "item_id": 7,
+            "limit": 1,
+            "advanced-backend": "8ade0763f2090c416f7245ca07d8d331",
+            "_csrf-backend": "G6BgcGXQ9e67rKUWBsODHm1X1tEg2uNFjrNDLPZ5Gh9hxysWNaG5tMjY72w-suVmCA-_4leOrij3wjNYrhtKTQ=="
+        },
+        "onInit": function () {
+
+        },
+        "onUploadComplete": function () {
+
+        },
+        "onError": "function (a, b, c, d) {}",
+        "uploadScript": "/uploadImage"
+    });</script>
+<script>
+    $('#ImageUploader1').uploadifive({
+        "width": "auto",
+        "height": "auto",
+        "buttonText": "",
+        "buttonText1": "Side",
+        "buttonText2": "Drag and drop your<br>photos or click to upload",
+        "formData": {
+            "type": "progress_front",
+            "uniqueId": "ImageUploader",
+            "item_id": 7,
+            "limit": 1,
+            "advanced-backend": "8ade0763f2090c416f7245ca07d8d331",
+            "_csrf-backend": "G6BgcGXQ9e67rKUWBsODHm1X1tEg2uNFjrNDLPZ5Gh9hxysWNaG5tMjY72w-suVmCA-_4leOrij3wjNYrhtKTQ=="
+        },
+        "onInit": function () {
+
+        },
+        "onUploadComplete": function () {
+
+        },
+        "onError": "function (a, b, c, d) {}",
+        "uploadScript": "/uploadImage"
+    });</script>
+<script>
+    $('#ImageUploader2').uploadifive({
+        "width": "auto",
+        "height": "auto",
+        "buttonText": "",
+        "buttonText1": "Back",
+        "buttonText2": "Drag and drop your<br>photos or click to upload",
+        "formData": {
+            "type": "progress_front",
+            "uniqueId": "ImageUploader",
+            "item_id": 7,
+            "limit": 1,
+            "advanced-backend": "8ade0763f2090c416f7245ca07d8d331",
+            "_csrf-backend": "G6BgcGXQ9e67rKUWBsODHm1X1tEg2uNFjrNDLPZ5Gh9hxysWNaG5tMjY72w-suVmCA-_4leOrij3wjNYrhtKTQ=="
+        },
+        "onInit": function () {
+
+        },
+        "onUploadComplete": function () {
+
+        },
+        "onError": "function (a, b, c, d) {}",
+        "uploadScript": "/uploadImage"
+    });</script>
+</body>
+</html>

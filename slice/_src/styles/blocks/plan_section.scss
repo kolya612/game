@@ -1,0 +1,218 @@
+.plan_section_block{
+  max-width: 100%;
+  position: relative;
+  border-radius: 0;
+
+  .title, .text{
+   text-align: left;
+  }
+
+  .title{
+    max-width: 560px;
+
+    @include max-screen(767px){
+      font-size: 24px;
+      padding-right: 40px;
+    }
+  }
+
+  .text{
+    max-width: 470px;
+    @include max-screen(767px){
+      font-size: 14px;
+    }
+  }
+
+  .btn.continue{
+    display: inline-block;
+    position:absolute ;
+    right: 80px;
+    top: 90px;
+    min-width: 153px;
+    line-height: 60px;
+    border-radius: 38px;
+    border: solid 1px #B1C1C8;
+    transition: 0.3s;
+    padding: 0;
+
+    &:hover {
+      background-color: $darkBlue;
+
+      path {
+        fill: white;
+      }
+    }
+
+    @include max-screen(991px){
+     position: relative;
+      right: 0px;
+      top: -30px;
+    }
+
+
+  }
+
+  .close{
+    position: absolute;
+    right: 80px;
+    top: 60px;
+    cursor: pointer;
+    i{
+      font-size: 16px;
+      color: #2F3E55;
+    }
+    @include max-screen(767px){
+      right: 20px;
+      top: 20px;
+    }
+  }
+
+  h4{
+    font-family: $sofiaPro;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 22.5px;
+    color: $grey;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .block_plan{
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    @include max-screen(767px){
+      margin-bottom: 50px;
+    }
+    img{
+      width: 100%;
+      display: block;
+    }
+    &:after{
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      background: linear-gradient(to bottom, rgb(0%, 7%, 93%, 0), rgb(0%, 7%, 93%, 0.3));
+      z-index: 1;
+      top: 0;
+    }
+    .block_post_blue{
+      background: linear-gradient(to bottom, rgb(0%, 7%, 93%, 0), rgb(0%, 7%, 93%, 0.6));
+      transition:0.5s;
+      bottom: -100%;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+    }
+    .description{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      z-index: 3;
+      .check{
+        width: 50px;
+        display: block;
+        height: 50px;
+        border-radius: 50%;
+        background-color: white;
+        text-align: center;
+        line-height: 48px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        transition: 0.3s;
+        &:after{
+          font-family: 'Font Awesome 5 Free';
+          font-weight: 900;
+          content: "\f067";
+          color:#0011EE;
+          font-size: 18px;
+        }
+      }
+      .bottom_d{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+      }
+      h3{
+        font-family: $sofiaPro;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1rem;
+        line-height: 20px;
+        color: $white;
+        margin-bottom: 15px;
+        height: 60px;
+        overflow: hidden;
+      }
+      .phase{
+        display: inline-block;
+        background-color: rgba(221, 76, 86, 0.7);
+        font-family: $sofiaPro;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 21px;
+        padding: 0 7px 2px 7px;
+        border-radius: 7px;
+        color:$white;
+        margin-bottom: 15px;
+        margin-right: 5px;
+      }
+      p{
+        font-family: $sofiaPro;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 13px;
+        line-height: 16px;
+        color: $white;
+        min-height: 88px;
+      }
+    }
+    &:hover{
+      .block_post_blue{
+        transition:0.5s;
+        bottom: 0;
+      }
+      .check{
+        background-color: #0011EE;
+        &:after{
+          font-family: 'Font Awesome 5 Free';
+          font-weight: 900;
+          content:"\f067";
+          color:#FFF;
+          font-size: 18px;
+        }
+      }
+    }
+    &.checked{
+      .block_post_blue{
+        transition:0.5s;
+        bottom: 0;
+      }
+      .check{
+        background-color: #0011EE;
+        &:after{
+          font-family: 'Font Awesome 5 Free';
+          font-weight: 900;
+          content:"\f00c";
+          color:#FFF;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .slide-one {
+    @include max-screen(575px) {
+      width: calc(100% + 20px);
+    }
+  }
+}

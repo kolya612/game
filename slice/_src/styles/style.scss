@@ -1,0 +1,24 @@
+//******************** GLOBAL ********************
+@import "global/variables";
+@import "global/default-style";
+@import "global/mixins";
+@import "global/helper-classes";
+@import "global/fonts";
+
+//******************** BLOCKS ********************
+@import "blocks/welcome-page";
+@import "blocks/nav-bar";
+@import "blocks/plan_section";
+@import "blocks/dashboard";
+@import "blocks/How_to_Estimate_Body_Fat";
+@import "blocks/Workout_Plan";
+@import "blocks/tracking-progress";
+@import "blocks/Exercise_Videos";
+@import "blocks/video-player-page";
+@import "blocks/photo-checkin";
+@import "blocks/my-account";
+@import "blocks/checkout";
+@import "blocks/error";
+@import "blocks/supplements";
+@import "blocks/loader";
+@import "blocks/estimate-body";

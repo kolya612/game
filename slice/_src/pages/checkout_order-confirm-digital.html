@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+@@include('includes/head.html')
+<body class="checkout-bg">
+@@include('includes/loader.html')
+@@include('includes/checkout-header.html')
+<section class="checkout physical order-confirm">
+
+    <h1 class="checkout__title">Order Confirmation</h1>
+
+    <div class="order-confirm__title-wrapper">
+        <img class="check-icon" src="../assets/check.svg" alt="check">
+        <p class="number-order">Order #EAD751068D Confirmed</p>
+        <h2 class="order-confirm__title">Your payment has been processed.</h2>
+    </div>
+
+    <div class="checkout-order">
+        <h3 class="title-sm">Order Summary</h3>
+        <div class="checkout-order__product content-box">
+            <div class="img-box digital-product">
+                <img src="../images/8ad.png" alt="product">
+            </div>
+
+            <div class="product-info">
+                <div class="title-group">
+                    <p class="title">Bikini Body Lean & Tone Home Edition</p>
+                </div>
+                <span class="categories_tag">Phase 1</span>
+            </div>
+        </div>
+        <div class="checkout-order__price content-box">
+            <ul>
+                <li class="price__elem">
+                    <span class="text grey">Regular Price</span>
+                    <span class="text price grey">$19.95</span>
+                </li>
+                <li class="price__elem">
+                    <span class="text green discount">Discounted Price</span>
+                    <span class="text price green">$14.99</span>
+                </li>
+                <li class="price__elem">
+                    <span class="text">Shipping & Handling</span>
+                    <span class="text price">$0.00</span>
+                </li>
+                <li class="price__elem">
+                    <span class="text">Tax</span>
+                    <span class="text price">$0.00</span>
+                </li>
+            </ul>
+        </div>
+        <div class="total-price">
+            <span>TOTAL</span>
+            <span>$149.91</span>
+        </div>
+    </div>
+
+
+    <div class="order-confirm__information">
+        <div class="content-box">
+            <h3 class="title-sm">Payment Info</h3>
+            <div class="info">
+                <p class="name">Card</p>
+                <p class="data">Visa ending in 5789</p>
+            </div>
+            <div class="info">
+                <p class="name">Expiration Date</p>
+                <p class="data">11/25</p>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h3 class="title-sm">Billing Address</h3>
+            <div class="info">
+                <p class="name">Name</p>
+                <p class="data">Mike Cruz</p>
+            </div>
+            <div class="info">
+                <p class="name">Address</p>
+                <p class="data">1501 NW North River Dr Miami, FL 33125</p>
+            </div>
+        </div>
+    </div>
+</section>
+@@include('includes/scripts.html')
+</body>
+</html>
