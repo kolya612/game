@@ -59,8 +59,17 @@ $bundle=\frontend\assets\AppAsset::register($this);
                         </div>
                     </div>
                 </div>
+                <p><input type="submit" value="Ударить"></p>
+                <?= Html::endForm() ?>
+
+                <div class="col-2"></div>
+                <div class="col-8"><?php
+                    foreach ($message as $msg) {
+                        echo '<p>' . $msg . '</p>';
+                    }
+                ?></div>
+                <div class="col-2"></div>
             </div>
-            <p><input type="submit" value="Ударить"></p>
-        <?= Html::endForm() ?>
+
     </div>
 </section>

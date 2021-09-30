@@ -8,6 +8,9 @@ use common\models\WbpActiveRecord;
 class Monsters  extends WbpActiveRecord
 {
     public static $imageTypes = ['page_img'];
+    public $hit1;
+    public $hit2;
+    public $protection;
 
     const ACTION = '/admin/pages';
     const TITLE = 'Monsters';

@@ -8,6 +8,7 @@ use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use wbp\dumper\Dumper;
 use Yii;
+use yii\base\BaseObject;
 use yii\base\InvalidArgumentException;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
@@ -79,9 +80,13 @@ class BestiaryController extends BaseController
     public function actionFight()
     {
         $session = Yii::$app->session;
+        $message = '';
 
         if (Yii::$app->request->post()) {
-            new Fight(Yii::$app->request->post(),$session['fighter'],$session['monster']);
+            $fight = new Fight();
+            $fight->fight(Yii::$app->request->post(),$session['fighter'],$session['monster']);
+            $message = $fight->message;
+
         }
 
         if(isset($session['fighter'])){
@@ -101,7 +106,8 @@ class BestiaryController extends BaseController
 
         return $this->render('fight',[
             'fighter' => $fighter,
-            'monster' => $monster
+            'monster' => $monster,
+            'message' => $message
         ]);
     }
 }
